@@ -1,0 +1,53 @@
+h1,a,p{
+    color: white;
+}
+h1,p{
+    text-align: center;
+}
+footer{
+    position: relative;
+}
+.footer-container{
+    height: 200px;
+    background-color: #1d1c1c; 
+    padding: 25px 0 0 0;
+}
+.footer-container .links{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 !important;
+
+}
+.footer-container li{
+    list-style: none;
+    font-size: 20px;
+    width: 20px;
+}
+.links a{
+    width: 20px;
+}
+.footer-container a:hover{
+    color: rgb(139, 237, 237);
+    transition: 0.3s;
+}
+.footer-brand{
+    display: flex;
+    justify-content: center;
+}
+.footer-brand a{ 
+    color: rgb(21, 122, 206);
+    font-size: 2.5rem;
+    text-decoration: none;
+    font-family: 'Great Vibes',cursive;/* font*/
+}
+.follow h1{
+    font-size: 25px;
+    color: #bfc9ca;
+}
+p{
+    font-size: 15px;
+    color: #bfc9ca;
+}

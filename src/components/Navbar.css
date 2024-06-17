@@ -1,0 +1,91 @@
+/* src/components/Navbar.css */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pacifico&display=swap');
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+    height: 80px;
+    padding: 0 30px !important;
+  }
+  
+  .navbar-brand a{ 
+    color: rgb(239, 232, 232);
+    font-size: 2.5rem;
+    text-decoration: none;
+    font-family: 'Great Vibes',cursive;/* font*/
+  }
+  
+  .menu-button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: none;
+  }
+  button{
+    height: 2rem;
+    width: 2rem;
+  }
+  .nav-menu {
+    display: flex;
+    transition: max-height 0.5s ease-out;
+    overflow: hidden;
+    z-index: 20;
+  }
+  .nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    z-index: 20;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  
+  .nav-menu li {
+    display: inline;
+  }
+  
+  .nav-menu a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav-menu a:hover, .nav-menu a.active {
+    color: orange; /* Highlight the active link in orange */
+  }
+  
+  @media (max-width: 768px) {
+    .menu-button {
+      display: block;
+      position: absolute;
+      right: 10px;
+      top: 25px;
+    }
+  
+    .nav-menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+      background-color: #333;
+      max-height: 300px;
+      transition: max-height 0.5s ease-out;
+    }
+  
+    .nav-menu.open {
+      display: flex;
+      max-height: 300px;
+    }
+  
+    .nav-menu ul {
+      flex-direction: column;
+      gap: 0;
+    }
+  
+    .nav-menu li {
+      margin: 0.5rem 0;
+    }
+  }
+  
