@@ -28,14 +28,15 @@ const About = () => {
           </div>
           <div className='abt1-content'>
             <h2 className='abt1-header'>Who Are We</h2>
-            <p className='abt1-description'>At Fork Frenzy, we believe in the power of great food to bring people together. Our modern and inviting space is perfect for any occasion, and our dedicated team is always ready to make your dining experience exceptional. Don't forget to explore our extensive drink menu, featuring carefully curated wines and craft cocktails that perfectly complement our dishes. Join us at Fork Frenzy, where every meal is an adventure in flavor and a celebration of good company. We look forward to serving you and making your time with us truly memorable. Bon appétit!</p>
+            <p className='abt1-description'>At Fork Frenzy. Our modern and inviting space is perfect for any occasion, and our dedicated team is always ready to make your dining experience exceptional.</p>
+            <p className='abt1-description'>Join us at Fork Frenzy, where every meal is an adventure in flavor and a celebration of good company. We look forward to serving you and making your time with us truly memorable. Bon appétit!</p>
           </div>
         </div>
 
         <div className='abt1'>
           <div className='abt1-content'>
             <h2 className='abt1-header'>Colleta Cary</h2>
-            <p className='abt1-description'>Seasonal changes, outstanding ingredients and a made-from-scratch philosophy guide Colletta's menu of house-made focaccia and pasta, antipastis, made-to-order wood-fired pizzas, and piatti. The chef curated dinner and dessert menus, pair with the well balanced wine and beverage program. </p>
+            <p className='abt1-description'>Seasonal changes, outstanding ingredients and a made-from-scratch menu of antipastis. The chef curated dinner and dessert menus, pair with the well balanced wine and beverage program. </p>
             <p className='abt1-description'>Located at Fenton in Cary, NC, this casual yet polished family-style Italian restaurant features 120 indoor dining seats, 60 seats outdoors on the semi-covered patio, and a 12-seat bar.</p>
           </div>
           <div className='abt1-img'>

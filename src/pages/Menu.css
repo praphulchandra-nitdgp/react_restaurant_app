@@ -16,7 +16,7 @@
   .menu-img img {
     width: 100%;
     height: 55vh;
-    object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
+    object-fit: cover;
     padding: 0;
     margin: 0;
   }
@@ -47,7 +47,7 @@
     gap: 10px;
     margin-bottom: 40px;
     margin-top: 40px;
-  }
+  } 
   
   .category-button {
     padding: 9px 15px;
@@ -83,7 +83,7 @@
   .menu-item {
     padding: 20px;
     margin: 16px;
-    width: 250px;
+    min-width: 300px;
     text-align: center;
     width: 30%;
     background-color: #0c0c0c;
@@ -102,4 +102,26 @@
     font-family: "Domine";
     color: #bfc9ca;
   }
+  .pagination{
+    width: 230px;
+    margin-left: calc(50% - 115px);
+    margin: 10px 0 10px calc(50% - 115px);
+  }
   
+  @media (max-width: 600px) {
+    .menu-container{
+      padding: 0 20px;
+    }
+    .category-button{
+      padding: 5px 10px;
+    }
+    .menu-item h3 {
+      margin: 0 0 7px 0;  
+      font-size: 24px;
+    }
+    
+    .menu-item p {
+      margin: 0;
+      font-size: 13px;
+    }
+  }

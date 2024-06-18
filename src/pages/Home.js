@@ -35,17 +35,17 @@ const Home = () => {
       </section>
       <section className='floating-section'>
         <div className='menu-caller'>
-          <div className='mc-content'>
-            <h2 className='mc-header'>MENU</h2>
-            {/* <p className='mc-description'>Welcome to Fork Frenzy, your ultimate culinary companion! We invite you to explore our diverse and delectable menu, curated to satisfy every palate. Fork Frenzy brings the best of local and international cuisine right to your fingertips. Enjoy an exceptional dining experience with us.</p> */}
-            <p className='mc-description'>Everything we serve is house-made and prepared by a staff that cares. You could spend a lifetime sampling every flavor combination at Federalist Pig, and we hope you do.</p>
-            <button onClick={handleMenuButtonClick} className='menu-btn'>Menu</button>
-          </div>
           <div className='mc-image'>
             <img
             src={MenuFloat}
             alt="Food menu image"
             />
+          </div>
+          <div className='mc-content'>
+            <h2 className='mc-header'>MENU</h2>
+            {/* <p className='mc-description'>Welcome to Fork Frenzy, your ultimate culinary companion! We invite you to explore our diverse and delectable menu, curated to satisfy every palate. Fork Frenzy brings the best of local and international cuisine right to your fingertips. Enjoy an exceptional dining experience with us.</p> */}
+            <p className='mc-description'>Everything we serve is house-made and prepared by a staff that cares. You could spend a lifetime sampling every flavor combination at Federalist Pig, and we hope you do.</p>
+            <button onClick={handleMenuButtonClick} className='menu-btn'>Menu</button>
           </div>
         </div>
         <div className='contact-caller'>

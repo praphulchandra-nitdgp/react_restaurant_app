@@ -72,7 +72,7 @@
     flex-direction: row;
     justify-content: center; 
     /* background-color: #090a0a;
-    background-image: url("https://www.transparenttextures.com/patterns/food.png"); */
+    background-image: url("https://www.transparenttextures.com/patterns/food.png"); */ 
   }
   .ds-item h2,
   .ds-item h3,
@@ -83,7 +83,8 @@
   .ds-item {
     padding: 20px;
     margin: 16px;
-    width: 250px;
+    min-width: 300px;
+    max-width: 400px;
     text-align: center;
     width: 30%;
     background-color: #0c0c0c;
@@ -116,13 +117,14 @@
 
   .floating-section {
     width: 100%;
-    padding: 20px;
+    padding: 0;
     box-sizing: border-box;
   }
   .menu-caller{
     width: 100%;
     display: inline-flex;
     height: 50vh;
+    flex-direction: row-reverse;
   }
 
 
@@ -183,6 +185,7 @@
     width: 100%;
     display: inline-flex;
     height: 50vh;
+    flex-direction: row;
   }
  
   .cc-content {
@@ -235,10 +238,6 @@
     height: 50vh;
   }
 
-
-@media (max-width: 1112px) {
-  
-}
 @media (max-width: 768px) {
 
   .text-section{
@@ -256,7 +255,136 @@
     font-size: 14px;
   }
 
+  /* menu caller */
+  .menu-caller{
+    width: 100%;
+    height: 40vh;
+  }
+  .mc-content {
+    width: 50%;
+    padding: 0 3vw;
+  }
+  .mc-header{
+    margin-bottom: 4px;
+  }
   
+  .mc-description {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #0c0c0c;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .menu-btn {
+    padding: 0;
+    font-size: 12px;
+    width: 60px;
+    height: 30px;
+  }
+  .mc-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .mc-image img {
+    width: 100%;
+    height: 40vh;
+  }
+  
+
+  .contact-caller{
+    width: 100%;
+    display: inline-flex;
+    height: 40vh;
+    flex-direction: row;
+  }
+  .cc-content {
+    width: 50%;
+    padding: 0 3vw;
+
+  }
+  .cc-header{
+    margin-bottom: 4px;
+  }
+  
+  .cc-description {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #0c0c0c;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-btn {
+    padding: 5px 10px;
+    font-size: 13px;
+    width: 70px;
+    height: 30px;
+  }
+  .cc-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cc-image img {
+    width: 100%;
+    height: 40vh;
+  }
+
+
+  .ds-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    /* background-color: #090a0a;
+    background-image: url("https://www.transparenttextures.com/patterns/food.png"); */
+    
+  }
+  .ds-item h2,
+  .ds-item h3,
+  .ds-item p{
+    color: white;
+    font-family: "Domine"; /* font*/
+  }
+  .ds-item {
+    padding: 20px;
+    margin: 16px;
+    min-width: 80%;
+    text-align: center;
+    width: 30%;
+    background-color: #0c0c0c;
+    border: 1px solid #334834;
+    border-radius: 2px;
+    box-shadow: 6px 6px #616060;
+    
+  }
+  
+  .ds-item h2 {
+    font-size: 2rem;
+  }
+  .ds-item>hr{
+     background-color: white;
+    height: 2px; 
+    border: 0; 
+    width: 100%;
+  }
+  
+  .ds-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .ds-item p {
+    font-size: 1rem;
+    color: #bfc9ca;
+  }
+   
 }
 @media (max-width: 450px) {
 
@@ -272,5 +400,33 @@
   .about-btn{
     width: 110px;
     height: 40px;
+  }
+  .mc-description {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #0c0c0c;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+  .cc-description {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #0c0c0c;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+
+
+  .ds-item {
+    padding: 20px;
+    margin: 16px;
+    min-width: 90%;
+    text-align: center;
+    width: 30%;
+    background-color: #0c0c0c;
+    border: 1px solid #334834;
+    border-radius: 2px;
+    box-shadow: 6px 6px #616060;
+    
   }
 }

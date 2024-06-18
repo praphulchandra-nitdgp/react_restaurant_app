@@ -5,7 +5,12 @@
     background-image: url("https://www.transparenttextures.com/patterns/food.png");
 } */
     main{
-        background-color: #fff5f5;
-background-image: url("https://www.transparenttextures.com/patterns/connected.png");
+        background-color: rgb(231, 231, 231);
+background-image: url("https://www.transparenttextures.com/patterns/cross-scratches.png");
+        padding: 0;
+    } 
+    /* main{
+        background-color: white;
+background-image: url("https://www.transparenttextures.com/patterns/grid-me.png");
         padding: 20px 0;
-    }
+    } */
