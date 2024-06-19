@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
+  background-color: #383E56;
   height: 80px;
   padding: 0 30px ;
   width: 100%;
@@ -60,6 +60,7 @@ button {
 .nav-menu a:hover, .nav-menu a.active {
   color: orange; /* Highlight the active link in orange */
 }
+
 
 @media (max-width: 768px) {
   .menu-button {

@@ -1,0 +1,107 @@
+.reservation-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: transparent;
+    /* background-image: url("https://www.transparenttextures.com/patterns/cross-scratches.png"); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 280px);
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Rowdies";
+  }
+  .reservation-form{
+    margin: 0;
+  }
+  .reservation-form input,
+  .reservation-form textarea {
+    width: 80%;
+    min-width: 450px;
+    padding: 14px;
+    margin: 0 0 5px 10%;
+    border: none;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
+    font-family: "Domines";
+    
+  }
+  ::placeholder {
+    font-family: "Domines";
+		font-weight: 600;
+    font-size: 1rem;
+    color: #807f7f;
+    position: relative;
+    left: 0;
+  }
+  .rs-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
+  .rs-btn button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    height: 2.5rem;
+    min-width: 100px;
+    padding: 0 3rem;
+    background-color: #070707;
+    color: white;
+    border: none;
+    border-radius: 3rem;
+    cursor: pointer;
+    background-image:linear-gradient(131deg, #ffd340, #ff923c, #ff923c, #ff923c);
+    background-size: 300% 100%;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .reservation-form button:hover {
+    box-shadow: 0 0.5em 0.5em -0.4em #ff923cba;
+    background-size: 100% 100%;
+    transform: translateY(-0.15em);
+  }
+  
+  .confirmation-message {
+    text-align: center;
+    padding: 20px;
+    background-color: #dff0d8;
+    border: 1px solid #d6e9c6;
+    border-radius: 10px;
+  }
+  @media (max-width: 600px) {
+    h2 {
+      margin-bottom: 18px;
+      font-size: 12px;
+    }
+    .reservation-form input,
+    .reservation-form textarea {
+      width: 80%;
+      min-width: 280px;
+      padding: 12px 14px;     
+    }
+    ::placeholder {
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+    .rs-btn button {
+      font-size: 14px;
+      height: 2rem;
+      min-width: 80px;
+      padding: 0 2.7rem;
+    }
+    
+    .reservation-form button:hover {
+
+      transform: translateY(-0.1em);
+    }
+    
+  }

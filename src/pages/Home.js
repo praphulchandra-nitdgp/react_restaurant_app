@@ -5,7 +5,7 @@ import CustomCarousel from '../components/Carousel';
 import "./Home.css";
 import DailyData from '../Dailyspecial';
 import MenuFloat from "../menuFloat.png";
-import ContactFloat from "../contactFloat.png"
+import ContactFloat from "../contactFloat.png";
 
 const Home = () => {
   const Navigate = useNavigate();

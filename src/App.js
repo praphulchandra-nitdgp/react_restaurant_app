@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Menu from './pages/Menu';
 import Contact from './pages/Contact';
+import Reserve from './pages/Reserve';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
             <Route path="/about" element={<About />} />
             <Route path="/menu" element={<Menu />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/reserve" element={<Reserve />} />
           </Routes>
         </main>
         <Footer />
