@@ -9,19 +9,24 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+
     
 	// To actually submit the form, you can programmatically trigger the submission
-    e.target.submit(); 
+
+		e.target.submit();
+
 	
     // Assuming the form submission is done through form submit (not via AJAX),
     // you can use this to show the alert message after submission
-    setShowSuccess(true);
-
+	setTimeout(() => {
+    	setShowSuccess(true);
+	}, 8000);
     
   };
   return (
     <>
-	{showSuccess && (
+      {showSuccess && (
         <div className="alert alert-success" role="alert">
           Your message has been sent successfully!
         </div>
@@ -325,52 +330,55 @@ const Contact = () => {
 			</g>
 	</svg>
 
-	<form action='https://formsubmit.co/7157d901fc2926588c88b3f68ed90dab' method='POST' onSubmit={handleSubmit}>
-		<h1 className="title text-center mb-4">Talk to Us</h1>
-		{/* honey pot */}
-		<input type='text' name='_honey' style={{display: "none"}} />
-		{/* removing captcha */}
-		<input type='hidden' name='_captcha' value="false" />
+	<form 
+          action='https://formsubmit.co/ae8b1d5813fb5e361a9738210a227420' 
+          method='POST' 
+          onSubmit={handleSubmit}
+        >
+          <h1 className="title text-center mb-4">Talk to Us</h1>
+          {/* Honey pot */}
+          <input type='text' name='_honey' style={{ display: "none" }} />
+          {/* Removing captcha */}
+          <input type='hidden' name='_captcha' value="false" />
+          <input type='hidden' name='_next' value="https://react-restaurant-app-rho.vercel.app" />
 
-		<input type='hidden' name='_next' value="react-restaurant-app-rho.vercel.app/" />
-
-			<div className="form-group position-relative">
-				<label for="formName" className="d-block circle">
-					<i className='icon'><PersonOutlineIcon /></i>
-				</label>
-				<input type="text" id="formName" name='name' className="form-control form-control-lg thick" placeholder="  Your Name"/>
-			</div>
-			<div className="form-group position-relative">
-				<label for="formEmail" className="d-block circle">
-					<i className="icon"><EmailIcon /></i>
-				</label>
-				<input type="email" id="formEmail" name='email' className="form-control form-control-lg thick" placeholder="  Your E-mail" />
-			</div>
-
-
-			<div className="form-group message">
-				<textarea id="formMessage" name="message" className="form-control form-control-lg" rows="7" placeholder="Your Message"></textarea>
-			</div>
-		
-
-			<div className="text-center">
-				<button type="submit" className="btn btn-primary" tabIndex="-1">Send</button>
-			</div>
-	</form>
-	
-{/* </div> */}
-</section>
-<section className='loc-section'>
-	<div className='location-data'>
-		
-		<i className='loc-icon'><LocationOnIcon /></i>
-		<h1 className='loc-title'>Fork Frenzy</h1>
-		<p className='address'>F92P+7WM, Jai Hind Gandhi Rd, Cyber Hills Colony, VIP Hills, Jaihind Enclave, Madhapur, Hyderabad, Telangana 500081</p>
-	</div>
-
-	<div className='map'>
-	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121789.02460173186!2d78.34896854699856!3d17.464163887381595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9100774d72bd%3A0x4f666131a21ddf3f!2sFeeding%20Frenzy!5e0!3m2!1sen!2sin!4v1718519695213!5m2!1sen!2sin" width="600" height="450" style={{border:'0',width:'100vw',padding:'10px 0',height:'70vh'}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-	</div>
+          <div className="form-group position-relative">
+            <label htmlFor="formName" className="d-block circle">
+              <i className='icon'><PersonOutlineIcon /></i>
+            </label>
+            <input type="text" id="formName" name='name' className="form-control form-control-lg thick" placeholder="Your Name" required />
+          </div>
+          <div className="form-group position-relative">
+            <label htmlFor="formEmail" className="d-block circle">
+              <i className="icon"><EmailIcon /></i>
+            </label>
+            <input type="email" id="formEmail" name='email' className="form-control form-control-lg thick" placeholder="Your E-mail" required />
+          </div>
+          <div className="form-group message">
+            <textarea id="formMessage" name="message" className="form-control form-control-lg" rows="7" placeholder="Your Message" required></textarea>
+          </div>
+          <div className="text-center">
+            <button type="submit" className="btn btn-primary" tabIndex="-1">Send</button>
+          </div>
+        </form>
+      </section>
+      <section className='loc-section'>
+        <div className='location-data'>
+          <i className='loc-icon'><LocationOnIcon /></i>
+          <h1 className='loc-title'>Fork Frenzy</h1>
+          <p className='address'>F92P+7WM, Jai Hind Gandhi Rd, Cyber Hills Colony, VIP Hills, Jaihind Enclave, Madhapur, Hyderabad, Telangana 500081</p>
+        </div>
+        <div className='map'>
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121789.02460173186!2d78.34896854699856!3d17.464163887381595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9100774d72bd%3A0x4f666131a21ddf3f!2sFeeding%20Frenzy!5e0!3m2!1sen!2sin!4v1718519695213!5m2!1sen!2sin" 
+            width="600" 
+            height="450" 
+            style={{ border: '0', width: '100vw', padding: '10px 0', height: '70vh' }} 
+            allowFullScreen="" 
+            loading="lazy" 
+            referrerPolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
 </section>
     </>
   );
