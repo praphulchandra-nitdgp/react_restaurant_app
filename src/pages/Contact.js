@@ -10,12 +10,14 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     
+	// To actually submit the form, you can programmatically trigger the submission
+    e.target.submit(); 
+
     // Assuming the form submission is done through form submit (not via AJAX),
     // you can use this to show the alert message after submission
     setShowSuccess(true);
 
-    // To actually submit the form, you can programmatically trigger the submission
-    e.target.submit();
+    
   };
   return (
     <>
@@ -323,14 +325,14 @@ const Contact = () => {
 			</g>
 	</svg>
 
-	<form action='https://formsubmit.co/7157d901fc2926588c88b3f68ed90dab' method='POST' onSubmit={handleSubmit}>
+	<form action='https://formsubmit.co/ae8b1d5813fb5e361a9738210a227420' method='POST' onSubmit={handleSubmit}>
 		<h1 className="title text-center mb-4">Talk to Us</h1>
 		{/* honey pot */}
 		<input type='text' name='_honey' style={{display: "none"}} />
 		{/* removing captcha */}
 		<input type='hidden' name='_captcha' value="false" />
 
-		<input type='hidden' name='_next' value="http://localhost:3000" />
+		<input type='hidden' name='_next' value="react-restaurant-app-6jx9.vercel.app" />
 
 			<div className="form-group position-relative">
 				<label for="formName" className="d-block circle">
