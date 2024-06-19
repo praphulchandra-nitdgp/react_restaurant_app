@@ -18,6 +18,7 @@
   }
   .reservation-form{
     margin: 0;
+    overflow: scroll;
   }
   .reservation-form input,
   .reservation-form textarea {
@@ -64,7 +65,7 @@
     transition: all 0.3s ease-in-out;
   }
   
-  .reservation-form button:hover {
+  .rs-btn button:hover {
     box-shadow: 0 0.5em 0.5em -0.4em #ff923cba;
     background-size: 100% 100%;
     transform: translateY(-0.15em);
@@ -76,6 +77,11 @@
     background-color: #dff0d8;
     border: 1px solid #d6e9c6;
     border-radius: 10px;
+  }
+  @media (max-width: 800px) {
+    .reservation-container {
+      height: calc(100vh - 245px);
+    }
   }
   @media (max-width: 600px) {
     h2 {
@@ -102,6 +108,9 @@
     .reservation-form button:hover {
 
       transform: translateY(-0.1em);
+    }
+    .reservation-container {
+      padding: 10px;
     }
     
   }

@@ -36,8 +36,8 @@ const About = () => {
         <div className='abt1'>
           <div className='abt1-content'>
             <h2 className='abt1-header'>Colleta Cary</h2>
-            <p className='abt1-description'>Seasonal changes, outstanding ingredients and a made-from-scratch menu of antipastis. The chef curated dinner and dessert menus, pair with the well balanced wine and beverage program. </p>
-            <p className='abt1-description'>Located at Fenton in Cary, NC, this casual yet polished family-style Italian restaurant features 120 indoor dining seats, 60 seats outdoors on the semi-covered patio, and a 12-seat bar.</p>
+            <p className='abt1-description'>Seasonal changes, outstanding ingredients and a made-from-scratch menu of antipastis. The chef curated dinner and dessert menus, pair with the well balanced food. </p>
+            <p className='abt1-description'>Located at Fenton in Cary, NC, this casual yet polished family-style Italian restaurant features 120 indoor dining seats.</p>
           </div>
           <div className='abt1-img'>
             <img

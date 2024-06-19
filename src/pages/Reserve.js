@@ -30,7 +30,7 @@ const Reserve = () => {
   };
 
   return (
-    <div className="reservation-container">
+    <section className="reservation-container">
       <h2>Make a Reservation</h2>
       {submitted ? (
         <div className="confirmation-message">
@@ -51,7 +51,7 @@ const Reserve = () => {
             </div>
         </form>
       )}
-    </div>
+    </section>
   );
 };
 

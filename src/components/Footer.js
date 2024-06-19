@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="footer-brand">
           <NavLink to="/">Fork Frenzy</NavLink>
         </div>
-        <div className="follow">
+        <div className="follow"> 
             <h1>Follow Us</h1>
             <ul className="links">
                 <li><a href="https://www.facebook.com/profile.php?id=100011406948979"><FacebookIcon /></a></li>

@@ -58,7 +58,7 @@ button {
 }
 
 .nav-menu a:hover, .nav-menu a.active {
-  color: orange; /* Highlight the active link in orange */
+  color: orange;
 }
 
 
@@ -75,7 +75,7 @@ button {
     flex-direction: column;
     width: 100%;
     text-align: center;
-    background-color: #333;
+    background-color: #282b37;
     max-height: 300px;
     transition: max-height 0.5s ease-out;
   }

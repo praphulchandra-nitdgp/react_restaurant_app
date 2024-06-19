@@ -1,23 +1,21 @@
-h1,a,p{
+.footer-container h1,
+.footer-container a{
     color: white;
 }
-h1,p{
+.footer-container h1,
+.footer-container p{
     text-align: center;
-}
-footer{
-    position: relative;
 }
 .footer-container{
     height: 200px;
     background-color: #1d1c1c; 
-    padding: 25px 0 0 0;
+    padding-top: 25px;
 }
 .footer-container .links{
     display: flex;
     gap: 10px;
     justify-content: center;
     align-items: center;
-
     padding: 0 !important;
 
 }
@@ -29,7 +27,7 @@ footer{
 .links a{
     width: 20px;
 }
-.footer-container a:hover{
+.links a:hover{
     color: rgb(139, 237, 237);
     transition: 0.3s;
 }
@@ -39,15 +37,30 @@ footer{
 }
 .footer-brand a{ 
     color: rgb(21, 122, 206);
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     text-decoration: none;
     font-family: 'Great Vibes',cursive;/* font*/
 }
 .follow h1{
-    font-size: 25px;
-    color: #bfc9ca;
+    font-size: 1.4rem;
 }
 p{
     font-size: 15px;
     color: #bfc9ca;
+}
+@media (max-width: 800px) {
+    .footer-container{
+        height: 175px;
+        background-color: #1d1c1c; 
+        padding-top: 14px;
+    }
+    .follow h1{
+        margin-bottom: 4px;
+    }
+    .footer-container p{
+        margin-bottom: 5px;
+    }
+    .links{
+        margin-bottom: 8px;
+    }
 }

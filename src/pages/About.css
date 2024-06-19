@@ -179,9 +179,8 @@
         }
         .abt-text-container p{
             color: black;
+            font-size: 0.7rem;
         }
-
-
         .abt1{
           width: 100%;
           display: inline-flex;
@@ -192,9 +191,8 @@
           margin-bottom: 4px;
   
         }
-        
         .abt1-description {
-          font-size: 0.9rem;
+          font-size: 0.7rem;
           margin-bottom: 20px;
           line-height: 16px;
           color: #0c0c0c;
