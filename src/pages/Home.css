@@ -178,6 +178,7 @@
   .mc-image img {
     width: 100%;
     height: 50vh;
+    border-radius: 15px 0 0 15px;/* test radius */
   }
   
 
@@ -237,6 +238,8 @@
   .cc-image img {
     width: 100%;
     height: 50vh;
+    border-radius: 0 15px 15px 0;/* test radius */
+
   }
 
 @media (max-width: 768px) {
