@@ -1,11 +1,17 @@
 
-import React from 'react';
+import React,{ useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import CustomCarousel from '../components/Carousel';
 import "./Home.css";
 import DailyData from '../Dailyspecial';
 import MenuFloat from "../menuFloat.png";
 import ContactFloat from "../contactFloat.png";
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
+
+
 
 const Home = () => {
   const Navigate = useNavigate();
@@ -19,6 +25,22 @@ const Home = () => {
   const handleContactButtonClick =() => {
     Navigate('/contact'); 
   };
+  useEffect(() => {
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: "body",
+        scrub: true,
+        start: "top top",
+        end: "bottom bottom",
+      }
+    });
+
+    tl
+      .to("body", { backgroundColor: "#f1842a", duration: 1 })
+      .to("body", { backgroundColor: "#FFD400", duration: 1 });
+      // .to("body", { backgroundColor: "#65C695", duration: 1 });
+  }, []);
+
   return (
     <>
       <section className='custom-carousel'>
@@ -33,7 +55,7 @@ const Home = () => {
           </button>
         </div>
       </section>
-      <section className='floating-section'>
+      <section className='floating-section color-change'>
         <div className='menu-caller'>
           <div className='mc-image'>
             <img
@@ -84,3 +106,4 @@ const Home = () => {
   );
 };
 export default Home;
+

@@ -10,7 +10,8 @@
 
 }
 .custom-carousel .carousel-item img{
-    object-fit: cover;
+    background-size: cover;
+
 }
 .text-section{
   background-color: black;
@@ -74,7 +75,7 @@
 .about-btn{
     width: 110px;
     height: 40px;
-    background-color: rgb(8, 9, 5); /* change this color*/
+    background-color: rgb(8, 9, 5); 
     border: 2px solid white;
     color: white;
     font-family: "pacifico";
@@ -431,6 +432,7 @@
   }
    
 }
+
 @media (max-width: 450px) {
 
   .text-section{
