@@ -92,6 +92,7 @@
 .daily-specials {
     padding: 20px;
     width: 100%;
+    background-color: #FEFCE1;
   }
   
   .ds-title {
@@ -162,6 +163,7 @@
     width: 100%;
     padding: 0;
     box-sizing: border-box;
+    background-color: #FEFCE1;
   }
   .menu-caller{
     width: 100%;

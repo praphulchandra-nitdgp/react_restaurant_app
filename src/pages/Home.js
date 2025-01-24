@@ -1,15 +1,16 @@
 
-import React,{ useEffect } from 'react';
+import React from 'react';
+// import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import CustomCarousel from '../components/Carousel';
 import "./Home.css";
 import DailyData from '../Dailyspecial';
 import MenuFloat from "../menuFloat.png";
 import ContactFloat from "../contactFloat.png";
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+// import { gsap } from 'gsap';
+// import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
 
 
@@ -25,21 +26,21 @@ const Home = () => {
   const handleContactButtonClick =() => {
     Navigate('/contact'); 
   };
-  useEffect(() => {
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: "body",
-        scrub: true,
-        start: "top top",
-        end: "bottom bottom",
-      }
-    });
+  // useEffect(() => {
+  //   const tl = gsap.timeline({
+  //     scrollTrigger: {
+  //       trigger: "body",
+  //       scrub: true,
+  //       start: "top top",
+  //       end: "bottom bottom",
+  //     }
+  //   });
 
-    tl
-      .to("body", { backgroundColor: "#f1842a", duration: 1 })
-      .to("body", { backgroundColor: "#FFD400", duration: 1 });
-      // .to("body", { backgroundColor: "#65C695", duration: 1 });
-  }, []);
+  //   tl
+  //     .to("body", { backgroundColor: "#FEFCE1", duration: 1 })
+  //     .to("body", { backgroundColor: "#FFE9FE", duration: 1 });
+  //     .to("body", { backgroundColor: "#65C695", duration: 1 });
+  // }, []);
 
   return (
     <>
@@ -60,7 +61,7 @@ const Home = () => {
           <div className='mc-image'>
             <img
             src={MenuFloat}
-            alt="Food menu image"
+            alt="Food menu img"
             />
           </div>
           <div className='mc-content'>
@@ -74,7 +75,7 @@ const Home = () => {
           <div className='cc-image'>
             <img
             src={ContactFloat}
-            alt="Food contact image"
+            alt="Food contact img"
             />
           </div>
           <div className='cc-content'>
